@@ -5,8 +5,8 @@ const path = require('path');
 function backupAndRestoreMongoDB() {
   const backupDir = path.resolve(__dirname, 'backup');
 
-  const devUri = 'mongodb+srv://project-dev:password@cluster0.vnlwmq2.mongodb.net/dev';
-  const prodUri = 'mongodb+srv://project-prod:password@cluster0.zydkicg.mongodb.net';
+  const devUri = 'mongodb+srv://<user>:<pass>@example.mongodb.net/dev';
+  const prodUri = 'mongodb+srv://<user>:<pass>@example.mongodb.net';
 
   const mongodumpCmd = `mongodump --uri="${devUri}" --out="${backupDir}"`;
   const mongorestoreCmd = `mongorestore --uri="${prodUri}" --db=prod --drop "${path.join(backupDir, 'dev')}"`;
@@ -33,7 +33,7 @@ function backupAndRestoreMongoDB() {
 backupAndRestoreMongoDB();
 
 // Backup dev Data:
-// mongodump --uri="mongodb+srv://project-dev:password@cluster0.vnlwmq2.mongodb.net/dev" --out=./backup
+// mongodump --uri="mongodb+srv://<user>:<pass>@example.mongodb.net/dev" --out=./backup
 
 // Copy Data from dev to prod:
-// mongorestore --uri="mongodb+srv://project-prod:password@cluster0.zydkicg.mongodb.net" --db=prod --drop "C:\Users\PC\backup\dev"
+// mongorestore --uri="mongodb+srv://<user>:<pass>@example.mongodb.net" --db=prod --drop "C:\Users\MYPC\backup\dev"
