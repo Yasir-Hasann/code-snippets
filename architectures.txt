@@ -1,0 +1,259 @@
+Socket.io with Redis
+Cronjobs with bull/agenda/mongodb cron
+JWT refresh token, token revocation
+Cookies
+RBAC
+MongoDB Sharding
+SQL (ORMs)
+NESTJS
+GraphQL
+Microservices (service discovery, API gateways, and inter-service communication and 12-factor app methodology)
+Kubernetes (Helm and CI/CD)
+Docker (Docker Compose)
+
+Use argon2 instead of bcryptjs
+Fastify
+NestJS
+GraphQL
+FreeAPI.com learn sockets
+Agenda.ja
+BullMQ
+Betterstack blogs
+
+==========================================================
+
+controller → service → repository → model  (best for large projects)
+controller → service → model   (best for mid level projects)
+Why we need these patterns?
+   - Let's say we want to reuse a logic
+   - Thin Controller (Not Messy controller)
+   - Testing without hitting DB
+   - Switch from MongoDB to SQL
+
+
+/jobs - For cron jobs
+
+File naming:
+ userController.js
+ userModel.js
+ userRoutes.js
+ userService.js
+ authMiddleware.js
+
+ user.controller.js
+ user.model.js
+ user.routes.js
+ user.service.js
+ auth.middleware.js
+
+ /controllers/user.js
+ /models/user.js
+ /routes/user.js
+ /services/user.js
+ /middleware/auth.js
+
+
+   Simple MVC:
+/src
+  /controllers
+    admin.js
+    auth.js
+    user.js
+  /models
+    admin.js
+    user.js
+  /routes
+    admin.js
+    user.js
+  /views  (optional)
+server.js
+
+
+
+Role-Based Architecture:
+/src
+  /controllers
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js
+  /models
+    admin.js
+    user.js
+    transaction.js
+  /routes
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js
+server.js	
+
+Service-Based Architecture:
+/src
+ /controllers
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js
+  /models
+    admin.js
+    user.js
+    transaction.js
+  /routes
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js
+  /services
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js
+server.js
+
+Layered Architecture:
+/src
+ /controllers
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js
+  /models
+    admin.js
+    user.js
+    transaction.js
+  /repositories
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js
+  /routes
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js
+  /services
+    /admin
+      auth.js
+      user.js
+      transaction.js
+    /user
+      auth.js
+      user.js
+      transaction.js	
+server.js
+
+Feature-Based (Modular):
+/src
+  /features
+    /admin
+      /auth
+        auth.controller.js
+        auth.model.js
+        auth.route.js
+        auth.service.js
+      /user
+        user.controller.js
+	user.model.js
+        user.route.js
+        user.service.js
+    /user
+      /auth
+        auth.controller.js
+        auth.model.js
+        auth.route.js
+        auth.service.js
+      /transaction
+        transaction.controller.js
+        transaction.model.js
+        transaction.route.js
+        transaction.service.js
+server.js
+
+Hybrid Modular + Layered (Enterprise Pattern):
+/src
+  /modules
+    /admin
+      /auth
+        auth.controller.js
+        auth.service.js
+        auth.route.js
+        auth.model.js
+      /user
+	user.controller.js
+	user.model.js
+        user.route.js
+        user.service.js
+    /user
+        auth.controller.js
+        auth.service.js
+        auth.route.js
+        auth.model.js
+      /transaction
+	transaction.controller.js
+        transaction.model.js
+        transaction.route.js
+        transaction.service.js
+server.js
+
+Microservices:
+/apps
+  /user-service
+    /controllers
+    /routes
+    /models
+    /services
+  /admin-service
+    /controllers
+    /routes
+    /models
+    /services
+  /gateway 
+
+
+Structure:
+/public
+/src
+ /controllers
+ /models
+ /routes
+ /services
+ /repositories
+ /shared
+  /middlewares
+  /utils
+  /config
+app.js  ← Express app initialization
+server.js ← Starts the server (binds port)

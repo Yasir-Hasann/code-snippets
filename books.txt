@@ -1,0 +1,139 @@
+"Clean Architecture" by Robert C. Martin
+"Node.js Design Patterns" by Mario Casciaro
+"Mastering Node.js" by Sandro Pasquali
+
+==========================================================
+
+== General Software Architecture & Full-Stack Development ==
+
+"Designing Data-Intensive Applications" by Martin Kleppmann
+
+Focus: This book dives into building systems that handle large amounts of data. It covers key topics such as databases, data models, and data processing, providing an in-depth look at distributed systems.
+
+"Clean Architecture" by Robert C. Martin
+
+Focus: Offers a practical guide on how to design clean, maintainable, and scalable architectures. Ideal for building large-scale applications with solid, reusable structures.
+
+"The Pragmatic Programmer" by Andrew Hunt & David Thomas
+
+Focus: Covers best practices for software development, including tips on writing clean code, debugging, testing, and maintaining code over time. It's a great read for sharpening general programming skills.
+
+"You Don't Know JS" (Series) by Kyle Simpson
+
+Focus: If you're working with JavaScript (NodeJS, ReactJS), this book series is essential for deep understanding. It covers the intricacies of JavaScript from the ground up.
+
+
+== Microservices & Distributed Systems ==
+
+"Building Microservices" by Sam Newman
+
+Focus: This is one of the most comprehensive guides on building and deploying microservices. It covers patterns, principles, and tools that will help you design systems with scalability and maintainability.
+
+"Microservices Patterns" by Chris Richardson
+
+Focus: This book offers an extensive collection of patterns and techniques for designing microservices-based systems. It includes topics like service decomposition, API design, and testing microservices.
+
+"Cloud Native Patterns" by Cornelia Davis
+
+Focus: Teaches how to build cloud-native systems, focusing on Kubernetes, microservices, and CI/CD. A great resource for understanding how to architect systems designed for the cloud.
+
+"Designing Distributed Systems" by Brendan Burns
+
+Focus: Focuses on designing scalable and resilient distributed systems. Written by one of the creators of Kubernetes, it’s a great read for understanding the complexities of distributed architecture.
+
+== DevOps & CI/CD ==
+
+"The Phoenix Project" by Gene Kim, Kevin Behr, George Spafford
+
+Focus: A must-read for understanding DevOps and IT operations in a practical, story-based format. The book walks you through how to improve processes and implement DevOps practices.
+
+"The DevOps Handbook" by Gene Kim, Patrick Debois, John Willis, Jez Humble
+
+Focus: This is a detailed guide on implementing DevOps principles, including continuous integration, continuous delivery, infrastructure as code, and much more.
+
+"Site Reliability Engineering" by Niall Richard Murphy, Betsy Beyer, Chris Jones, Jennifer Petoff
+
+Focus: Written by Google engineers, this book provides a comprehensive overview of Site Reliability Engineering (SRE) practices and how they can help maintain and scale large systems.
+
+"Continuous Delivery" by Jez Humble & David Farley
+
+Focus: Explores practices for improving the development lifecycle and continuously delivering software with high quality. It covers deployment automation, testing, and more.
+
+== Cloud Computing & Serverless Architectures ==
+
+"Cloud Native DevOps with Kubernetes" by John Arundel & Justin Domingus
+
+Focus: A practical guide to using Kubernetes for modern DevOps workflows. It explains how to deploy applications in the cloud with containers and Kubernetes.
+
+"Serverless Architectures on AWS" by Peter Sbarski
+
+Focus: This book gives an in-depth look at designing and deploying serverless applications on AWS. It's perfect for those looking to understand how serverless works and how to build scalable solutions without managing servers.
+
+"Designing Serverless Applications" by Brian Holt
+
+Focus: This book introduces serverless computing and how to design scalable, cost-effective applications without the burden of managing infrastructure.
+
+== System Design & Scalability ==
+
+"System Design Interview" by Alex Xu
+
+Focus: Perfect for learning how to approach system design interviews and thinking about building large-scale systems. The book breaks down concepts like load balancing, sharding, and caching in a simple way.
+
+"Scalability Rules" by Martin L. Abbott & Michael T. Fisher
+
+Focus: Provides a practical guide to designing systems that scale efficiently. It focuses on design patterns and architectural choices that help avoid bottlenecks as systems grow.
+
+"Designing Data Systems" by Brendan O'Connor
+
+Focus: This is a practical guide for designing databases and other data-related systems, including distributed systems and real-time data processing.
+
+== Cloud Platforms (AWS, Azure, GCP) ==
+
+"Amazon Web Services in Action" by Michael Wittig & Andreas Wittig
+
+Focus: This book is a practical guide to learning AWS services for cloud-based application development, with a focus on real-world scenarios.
+
+"Cloud Computing: Concepts, Technology & Architecture" by Thomas Erl
+
+Focus: Provides a comprehensive overview of cloud computing concepts, including cloud deployment models, services, and architecture.
+
+"Google Cloud Platform for Architects" by Alok Shrivastwa & Sandeep Dinesh
+
+Focus: This book provides an in-depth guide to designing and deploying solutions on Google Cloud Platform (GCP). It covers storage, compute, and networking on GCP.
+
+== ReactJS & Frontend Development == 
+
+"Fullstack React: The Complete Guide to ReactJS and Friends" by Accomazzo, Murray, & Auerbach
+
+Focus: A great resource for mastering ReactJS, this book walks you through the entire ecosystem, including Redux, React Router, and testing with Jest.
+
+"Learning React" by Alex Banks & Eve Porcello
+
+Focus: A solid starting point for learning ReactJS. It covers all core concepts in React, along with best practices and some advanced techniques.
+
+"Pro React" by Cassio de Sousa Antonio
+
+Focus: If you're already comfortable with React and want to take it to the next level, this book dives into advanced topics like optimization, testing, and server-side rendering.
+
+== Algorithms & Data Structures ==
+
+"Cracking the Coding Interview" by Gayle Laakmann McDowell
+
+Focus: Although aimed at interview preparation, this book provides a wealth of algorithms and data structures knowledge, which are essential for backend or system design.
+
+"Introduction to Algorithms" by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (CLRS)
+
+Focus: The definitive book on algorithms. If you're aiming for deeper knowledge of algorithmic problem-solving, this book is a must-read.
+
+"Algorithm Design Manual" by Steven S. Skiena
+
+Focus: This book provides practical advice on algorithm design and implementation. It includes case studies, as well as a variety of examples that help solidify your understanding.
+
+== Additional Great Reads ==
+"Refactoring: Improving the Design of Existing Code" by Martin Fowler
+
+Focus: Teaches you how to improve the structure of existing code, making it more maintainable and flexible. Ideal for working on legacy codebases or building scalable applications.
+
+"Domain-Driven Design: Tackling Complexity in the Heart of Software" by Eric Evans
+
+Focus: This book helps you understand how to structure software systems in a way that reflects real-world domains, leading to more scalable and maintainable applications.

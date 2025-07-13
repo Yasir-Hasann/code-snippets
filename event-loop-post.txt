@@ -1,0 +1,59 @@
+EXAMPLE 1:
+:receipt: Synchronous code
+The chef’s mom calls. Everything stops until he answers.
+:female-cook: "Yes mom, I did eat lunch."
+:first_place_medal: process.nextTick()
+VIP customer. Doesn't wait in line. Just shouts from the front:
+:speaking_head_in_silhouette: “I know the owner!!”
+:second_place_medal: Promise.then() / async-await
+Online orders. Come in fast, get packed fast. Efficient, clean, no small talk.
+:speaking_head_in_silhouette: “Please rate us on the app.”
+:third_place_medal: I/O operations (like reading from DB or FS)
+The Uber Eats guy. Chills at the side counter. Gets served after online orders.
+:speaking_head_in_silhouette: “Order #14567 — Chicken Tikka with extra JSON?”
+:stopwatch: setTimeout()
+The stoner who ordered 2 hours ago and just remembered to come pick it up.
+:speaking_head_in_silhouette: “Dude, you still got that large fries?”
+:man-walking: setImmediate()
+Night-shift intern. Waits for everyone else to be served before touching anything.
+:speaking_head_in_silhouette: “I’ll clean the grills after midnight.”
+
+EXAMPLE 2:
+Imagine Node.js is The Bachelor. Every async task wants that final rose :rose:. But there can only be one who goes first…
+Let’s meet the contestants :point_down:
+:crown: process.nextTick()
+The clingy ex. Shows up immediately after the current task. Doesn’t care who else is in line.
+:speaking_head_in_silhouette: “Notice me now or I’ll break your app!”
+:ring: Promise.then() / async-await
+The overachiever. Shows up right after the ex leaves.
+:speaking_head_in_silhouette: “I’m responsible, reliable, and microtasked.”
+:mailbox_with_mail: I/O tasks (like reading a file or DB)
+The Amazon delivery. Might take a minute, but always shows up with something useful.
+:speaking_head_in_silhouette: “Your file has arrived, babe.”
+:alarm_clock: setTimeout / setInterval
+The chill friend who’s always like “yeah I’ll be there in 5 mins”... but it’s 2026.
+:speaking_head_in_silhouette: “Sorry I overslept.”
+:door: setImmediate()
+The night-shift cleaner. Doesn’t come in until the kitchen (I/O queue) is empty.
+:speaking_head_in_silhouette: “Is everyone gone? Time to mop.”
+
+EXAMPLE 3:
+:brain: Node.js Event Loop — Assemble the Async-vengers!
+:receipt: Synchronous code = Doctor Strange
+He bends time. Nothing moves unless he finishes his spell.
+:cyclone: “Dormammu, I’ve come to block your thread!”
+:first_place_medal: process.nextTick() = Quicksilver
+Too fast. Doesn’t wait for anyone. Blinks and he's gone.
+:zap: “Already done before you even asked.”
+:second_place_medal: Promise.then() / async-await = Iron Man
+High-tech, efficient, always ready with a Promise.
+:robot_face: “Jarvis, queue the next microtask.”
+:third_place_medal: I/O (file/db/network) = Spider-Man
+Out doing all the errands. Comes back with data... eventually.
+:spider_web: “Sorry I'm late, I had to fight a database bug on the way!”
+:stopwatch: setTimeout() = Thor
+Shows up whenever he feels like.
+:zap: “The prophecy said I'd arrive after 3000ms.”
+:man-walking: setImmediate() = Hulk
+Big, powerful, but always comes in last and smashes cleanup.
+:boom: “HULK RUN AFTER EVERYONE ELSE!”

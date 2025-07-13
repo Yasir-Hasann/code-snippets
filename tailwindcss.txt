@@ -1,0 +1,46 @@
+Tailwind CSS 4.x
+
+npm install -D tailwindcss @tailwindcss/vite
+
+// vite.config.js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+});
+
+// src/index.css
+@import "tailwindcss";
+
+===============================================
+Tailwind CSS 3.x
+
+npm install -D tailwindcss postcss autoprefixer
+
+// tailwind.config.js
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+
+// postcss.config.js
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+
+// src/index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,74 @@
+// Important URLs
+
+// Check DNS Records:
+https://dnschecker.org/
+https://www.digwebinterface.com/?hostnames=vercel.com&type=ANY&ns=resolver&useresolver=9.9.9.10&nameservers=
+
+
+// AWS DOCS:
+https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/javascript_ses_code_examples.html
+
+// Socket.io:
+https://github.com/socketio/socket.io/blob/main/examples/chat/index.js 
+
+//  Multer-S3 Uploads
+https://www.npmjs.com/package/multer-s3-transform
+https://github.com/expressjs/multer/issues/648
+
+// Web Push Notifications
+https://www.webpushr.com/
+
+// IP
+https://ipgeolocation.abstractapi.com/v1/?api_key=9432c2d42e654c6288190f74ef856b20
+https://api64.ipify.org/?format=json
+https://api.ipify.org/?format=json
+
+// Watermark Remover
+https://github.com/D-Ogi/WatermarkRemover-AI.git
+https://github.com/Camillerkt/Multiple-Images-Watermark-Remover.git
+
+
+https://github.com/hagopj13/node-express-boilerplate.git
+https://joyeecheung.github.io/blog/
+https://microservices.io/patterns/microservices.html
+https://github.com/sindresorhus/awesome-nodejs/tree/main?tab=readme-ov-file
+https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location
+
+https://www.programming-books.io/essential/nodejs/index.html
+https://www.programming-books.io/
+https://github.com/tejazz/gridfs-file-storage
+https://blog.isquaredsoftware.com/presentations/react-redux-ts-intro-2020-12/#/30
+https://mirzaleka.medium.com/a-detailed-look-into-the-node-js-http-module-680eb5e4548a
+https://chatgpt.com/share/682d60db-d0a4-800a-88ce-cda5cfb9f681
+
+https://mirzaleka.medium.com/
+https://blog.isquaredsoftware.com/presentations/react-redux-ts-intro-2020-12/#/33
+https://betterstack.com/community/guides/scaling-nodejs/nodejs-workers-explained/
+https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript
+
+
+
+// docker build -t image_name .
+// docker run -p 5001:5001 -d image_name
+// docker exec -it 565 sh             container entering command
+
+const consoleLogger = {
+  type: 'logger',
+
+  log(args) {
+    this.output('log', args);
+  },
+
+  warn(args) {
+    this.output('warn', args);
+  },
+
+  error(args) {
+    this.output('error', args);
+  },
+
+  output(type, args) {
+    console?.[type]?.apply?.(console, args);
+  },
+};
+
