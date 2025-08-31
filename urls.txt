@@ -46,6 +46,8 @@ https://blog.isquaredsoftware.com/presentations/react-redux-ts-intro-2020-12/#/3
 https://betterstack.com/community/guides/scaling-nodejs/nodejs-workers-explained/
 https://nodesource.com/blog/worker-threads-nodejs-multithreading-in-javascript
 
+https://www.mongodb.com/docs/manual/changeStreams/9:13
+https://www.mongodb.com/docs/manual/reference/change-events/update
 
 
 // docker build -t image_name .
